@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Age calculator app</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body >
+  <div class="container w-[70%] flex flex-col mx-auto justify-content items-center">
+    <div class="time-div flex flex-row justify-center items-center">
+      <div class="b-day w-[30%] flex  flex-col justify-center items-center gap-2">
+        <p class=" text-[14px] uppercase font-bold text-gray-600" >Day</p>
+        <input type="number" class="day" placeholder="DD">
+        <p class="day-error"></p>
+      </div>
+      <div class="b-month w-[30%]  flex  flex-col justify-center items-center gap-2">
+        <p class=" text-[14px] uppercase font-bold text-gray-600" >Month</p>
+        <input type="text" class="month" placeholder="MM">
+        <p class="month-error"></p>
+      </div>
+      <div class="b-year w-[30%]  flex  flex-col justify-center items-center gap-2">
+        <p class=" text-[14px] uppercase font-bold text-gray-600" >Year</p>
+        <input type="text" class="year" placeholder="YYYY">
+        <p class="year-error"></p>
+      </div>
+    </div>
+    <div class="btn w-[100%] mt-[4%] flex sm:flex-row flex-col justify-center  items-center">
+      <div class="border-b-[2px] border-[#000] w-[75%] "></div>
+      <img  class="w-[15%]" src="./assets/images/icon-arrow.svg" alt="">
+    </div>
+    <div class="age-value flex flex-col justify-center items-center">
+      <div class="age-year flex gap-3 justify-center items-center">
+        <p class="y-input ">-  -</p>
+        <p>years</p>
+      </div>
+      <div class="age-month flex gap-3 justify-center items-center">
+        <p class="m-input">-  -</p>
+        <p>months</p>
+      </div>
+      <div class="age-day flex gap-3 justify-center items-center">
+        <p class="d-input">-  -</p>
+        <p>days</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Rahul Kumar Verma</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

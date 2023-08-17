@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&family=Roboto&display=swap');
+
+:root{
+    --Purple: hsl(259, 100%, 65%);
+    --Lightred: hsl(0, 100%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Offwhite: hsl(0, 0%, 94%);
+    --Lightgrey: hsl(0, 0%, 86%);
+    --Smokeygrey: hsl(0, 1%, 44%);
+    --Offblack: hsl(0, 0%, 8%);
+}
+.day-error,
+.month-error,
+.year-error {
+  height: 1rem; /* Adjust the height as needed */
+  margin-top: 0.5rem; /* Add some spacing between the input and error message */
+}
+input {
+    border: 1.7px solid var(--Smokeygrey);
+    width: 70%;
+    padding: 6px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+body{
+    
+    background-color: var(--Offwhite);
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    padding: 30px;
+    font-size: 20px;
+    background-color: var(--White);
+    border-radius: 0 0 20%/50% 0;
+}
+.age-value p:not(:last-of-type) {
+    color: var(--Purple);
+    font-weight: bolder;
+}
+
+img{
+    color: var(--White);
+    background-color: var(--Purple);
+    padding: 5px;
+    border-radius: 50%;
+}
+.age-value{
+    font-size: 32px;
+    font-weight: bold;
+}
