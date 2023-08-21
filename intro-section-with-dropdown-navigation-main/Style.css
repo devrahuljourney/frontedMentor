@@ -1,0 +1,46 @@
+:root{
+    --AlmostWhite: hsl(0, 0%, 98%);
+    --MediumGray: hsl(0, 0%, 45%);
+    --AlmostBlack: hsl(0, 0%, 8%);
+}
+.drop-content{
+    background-color: #fff;
+    padding: 6px;
+    display: flex;
+    box-shadow: 2px 2px 2px 2px #eeebeb,2px 2px 2px 2px #eeebeb ;
+}
+.register{
+    border: 2px solid var(--MediumGray);
+    padding: 5px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+.down-arrow{
+    position: absolute;
+    left: 130%;
+    top: 40%;
+    width: 10px;
+    height: 10px;
+}
+.down-arrow.active{
+    transform: rotate(180deg);
+}
+/* .feature {
+    display: none;
+}
+
+.feature-div:hover + .feature {
+    display: block;
+}
+.company-content {
+    display: none;
+}
+
+.company-div:hover + .company-content {
+    display: block;
+} */
+.nav{
+    background-color: var(--AlmostWhite);
+}

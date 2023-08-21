@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+ 
+  <div class="container w-full">
+
+
+    <!-- navigation bar -->
+    <div class="nav p-8 h-[80px]  w-full flex sm:flex-row flex-col  justify-between items-center">
+      <!-- logo -->
+      <div class="logo w-[10%] ">
+        <img  src="./images/logo.svg" alt="logo">
+      </div>
+      <div class="menu flex flex-col gap-1 absolute right-4">
+        <div class="line w-[30px] border-2 border-[#000] opacity-95 sm:opacity-0"></div>
+        <div class="line w-[30px] border-2 border-[#000] opacity-95 sm:opacity-0"></div>
+        <div class="line w-[30px] border-2 border-[#000] opacity-95 sm:opacity-0"></div>
+      </div>
+     <div class="mobile-view">
+      <div class=" drop-down-section w-[60%] flex sm:flex-row flex-col sm:justify-evenly sm:items-center justify-center items-between sm:gap-0 gap-8 opacity-0 sm:opacity-95">
+
+        <!-- feature section -->
+        <div class="feature-sec">
+          <div class="feature-div relative flex flex-row gap-3">
+            <a href="#">Feature</a>
+            <img class="down-arrow" src="./images/icon-arrow-down.svg" alt="">
+         </div>
+
+
+         <div class="feature drop-content  absolute flex flex-col justify-center items-between gap-5 p-4 w-[10%] hidden">
+           <div class="todo flex flex-row justify-evenly items-center gap-2">
+            <img src="./images/icon-todo.svg" alt="">
+            <a href="#">Todo List</a>
+           </div>
+           <div class="calender flex flex-row justify-evenly items-center gap-2 gap-2">
+            <img src="./images/icon-calendar.svg" alt="">
+            <a href="#">Calender</a>
+           </div>
+           <div class="reminder flex flex-row justify-evenly items-center gap-2 gap-2">
+            <img src="./images/icon-reminders.svg" alt="">
+            <a href="#">Reminder</a>
+           </div>
+           <div class="planning flex flex-row justify-evenly items-center gap-2 gap-2">
+            <img src="./images/icon-planning.svg" alt="">
+            <a href="#">Planning</a>
+           </div>
+          </div>
+
+        </div>
+
+
+        <!-- company section -->
+        <div class="company-sec relative">
+          <div class="company-div flex flex-row gap-3">
+           
+            <a href="#">company</a>
+            <img class="down-arrow" src="./images/icon-arrow-down.svg " alt="">
+          </div>
+          <div class="company-content drop-content absolute  flex flex-col justify-center items-between gap-5 p-4 hidden">
+            <a href="">History</a>
+            <a href="">Our Team</a>
+            <a href="">Blog</a>
+          </div>
+        </div>
+        
+
+        <!-- carrier -->
+        <div class="carrier"><a href="#">carrier</a></div>
+
+        <!-- About -->
+        <div class="about"><a href="#">About</a></div>
+
+      </div>
+
+      <div class="login-register flex   flex-row w-[15%] justify-between items-center sm:opacity-95 opacity-0">
+        <a class="" href="#">Login</a>
+        <a class="register" href="#">Register</a>
+      </div>
+     </div>
+
+
+    </div>
+
+
+  </div>
+  Features
+  Company
+  Careers
+  About
+
+  Login
+  Register
+
+  Make remote work
+
+  Get your team in sync, no matter your location. Streamline processes, 
+  create team rituals, and watch productivity soar.
+
+  Learn more
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
